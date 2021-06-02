@@ -14,10 +14,13 @@
 
 ## USUARIO
 1.   /login (POST)
-	* Permite autenticarse, enviando un objeto del tipo User.
+    * Permite autenticarse, enviando un objeto del tipo User.
     * Devuelve el token necesario para poder utilizar cualquier otro endpoint, este JWT deberá ser enviado en el header dentro del key token.
+    
+    ![Ejemplo POSTMAN](https://github.com/fixtse/backend-rest-api/raw/main/token.png)
+    
 2.   /newuser (POST)
-	* Permite crear un usuario nuevo,recibe un objeto del tipo User.
+    * Permite crear un usuario nuevo,recibe un objeto del tipo User.
     * Se valida que el usuario tenga un JWT válido
 ## NOTAS
 1.  /newgrade (POST)
@@ -41,4 +44,4 @@ La validación de estructura se realiza de acuerdo al objeto aceptado por cada e
     * La nota no puede estar vacía ni ser menor a 0
     * El usuario no puede estar vacío
 
-**bold**La llave utilizada para cifrar los JWT se genera aleatoriamente en cada ejecución, por lo que al reiniciar el API, es necesario volver a autenticarse.
+**La llave utilizada para cifrar los JWT se genera aleatoriamente en cada ejecución, por lo que al reiniciar el API, es necesario volver a autenticarse.**
