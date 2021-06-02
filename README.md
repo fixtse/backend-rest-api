@@ -17,9 +17,9 @@
     * Permite autenticarse, enviando un objeto del tipo User.
     * Devuelve el token necesario para poder utilizar cualquier otro endpoint, este JWT deberá ser enviado en el header dentro del key token.
 
-<div align="center" >
-[![Ejemplo POSTMAN](https://github.com/fixtse/backend-rest-api/raw/main/token.png)]    
-</div>
+
+![Ejemplo POSTMAN](https://github.com/fixtse/backend-rest-api/raw/main/token.png)    
+
 
 
     
